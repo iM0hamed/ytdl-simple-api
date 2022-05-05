@@ -96,7 +96,7 @@ function loadingBtn(id) {
   document.getElementById(id).innerHTML = `
     <button class="btn btn-danger" type="button" disabled>
         <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-        hold...
+        Loading...
     </button>`;
 }
 
