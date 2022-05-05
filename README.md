@@ -6,63 +6,82 @@
 </p>
 
 &nbsp;
+
 ## Deploy Fácil
+
 - Clique no botão a baixo e faça deploy do projeto direto no heroku automaticamente:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/erickythierry/ytdl-simple-api)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/iM0hamed/ytdl-simple-api)
 
 &nbsp;
+
 ## Deploy Manual
- - Clone esse projeto, acesse a pasta raiz e execute o comando `npm install` ou `yarn` 
- - Após instalar as dependências, execute `npm start`
- - O endpoint do projeto vai estar em `http://localhost:3000`
+
+- Clone esse projeto, acesse a pasta raiz e execute o comando `npm install` ou `yarn`
+- Após instalar as dependências, execute `npm start`
+- O endpoint do projeto vai estar em `http://localhost:3000`
 
 &nbsp;
+
 ## Live Exemplo
+
 <a href="https://yt-et.herokuapp.com/"><h3>https://yt-et.herokuapp.com/</h3></a>
 
 &nbsp;
+
 ## modo de usar:
 
 ##### https://yt-et.herokuapp.com/audio?url= `link do video do youtube`
+
 - a api retornará um json com o link de download do audio do vídeo em mp3 como no exemplo a baixo:
+
 ```json
 {
-    "sucess": true, 
-    "file": "url direta para baixar o audio do vídeo em formato mp3"
-}
-```
-&nbsp;
-##### https://yt-et.herokuapp.com/video?url= `link do video do youtube`
-- a api retornará um json com o link de download do vídeo em mp4 como no exemplo a baixo:
-```json
-{
-    "sucess": true, 
-    "file": "url direta para baixar o video em formato mp4"
-}
-```
-&nbsp;
-##### https://yt-et.herokuapp.com/info?url= `link do video do youtube`
-- a api retornará um json com algumas informações do vídeo como no exemplo a baixo:
-```json
-{
-    "sucess": true,
-    "title" : "Titulo do video",
-    "videoid" : "ID do video",
-    "thumb": "URL da thumb no formato jpg",
-    "duration" : "Duração do vídeo em segundos",
-    "likes" : "numero de likes no vídeo"
-}
-```
-&nbsp;
-##### Caso ocorra algum erro nas solicitações, a API retornará um json como o exemplo a baixo:
-```json
-{
-    "sucess": false, 
-    "error": "a mensagem do erro ocorrido"
+  "sucess": true,
+  "file": "url direta para baixar o audio do vídeo em formato mp3"
 }
 ```
 
+&nbsp;
+
+##### https://yt-et.herokuapp.com/video?url= `link do video do youtube`
+
+- a api retornará um json com o link de download do vídeo em mp4 como no exemplo a baixo:
+
+```json
+{
+  "sucess": true,
+  "file": "url direta para baixar o video em formato mp4"
+}
+```
+
+&nbsp;
+
+##### https://yt-et.herokuapp.com/info?url= `link do video do youtube`
+
+- a api retornará um json com algumas informações do vídeo como no exemplo a baixo:
+
+```json
+{
+  "sucess": true,
+  "title": "Titulo do video",
+  "videoid": "ID do video",
+  "thumb": "URL da thumb no formato jpg",
+  "duration": "Duração do vídeo em segundos",
+  "likes": "numero de likes no vídeo"
+}
+```
+
+&nbsp;
+
+##### Caso ocorra algum erro nas solicitações, a API retornará um json como o exemplo a baixo:
+
+```json
+{
+  "sucess": false,
+  "error": "a mensagem do erro ocorrido"
+}
+```
 
 &nbsp;
 \
